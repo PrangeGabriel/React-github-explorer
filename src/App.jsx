@@ -1,5 +1,14 @@
+import { Counter } from './components/Counter'
+import { RepositoryList } from './components/RepositoryList'
+
 import './styles/global.scss'
 
 export function App(){
-  return <h1>Hello World</h1>
+  return (
+    // fragments são melhor que divs, pois nao aparecem no html
+    <> 
+      <RepositoryList />
+      <Counter />
+    </>
+  )
 }
